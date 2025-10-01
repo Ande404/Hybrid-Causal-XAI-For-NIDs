@@ -1,0 +1,15 @@
+# Core scientific libraries
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+matplotlib==3.9.0
+tqdm==4.66.4
+joblib==1.4.2
+
+# Deep learning (CPU build; works on Mac/Windows/Linux)
+torch==2.3.0
+
+# Explainability
+captum==0.7.0
+shap==0.41.0
+lime==0.2.0.1
