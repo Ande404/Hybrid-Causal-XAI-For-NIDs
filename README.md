@@ -8,7 +8,6 @@ It uses a **Long Short-Term Memory (LSTM)** network combined with **explainable 
 
 ## 📂 Project Files
 - `test.ipynb` → Main notebook to train and evaluate the model, and run explainability analysis.
-- `dataset-labeled-anon-ip.csv` → Input dataset (this was downloaded from [here](https://github.com/ristov/nids-alert-data)).
 - `requirements.txt` → Project Dependecies
 - `best_lstm.pt` → (Optional) My Pretrained weights (You may want to delete this in your local repo so that you can generate your own).
 - `xai_metrics_sample.csv` → Example output that i got with computed XAI metrics.
@@ -34,7 +33,9 @@ It uses a **Long Short-Term Memory (LSTM)** network combined with **explainable 
    pip install notebook
    ```
 
-3. **Clone this repository**
+3. **Download the Dataset**
+    - download the dataset from this repo [here](https://github.com/ristov/nids-alert-data)
+
 4. **Install the requirements**
     - cd to your repo and then run this in the terminal:
     ```bash
@@ -49,13 +50,15 @@ It uses a **Long Short-Term Memory (LSTM)** network combined with **explainable 
     - Open test.ipynb and run the cells in order.
 
 ### Option 2: Run in Google Colab (no install required )
-1. Go to Google Colab 
+1. Download the dataset from this repo [here](https://github.com/ristov/nids-alert-data) 
 
-2. Click “Upload” and upload the file test.ipynb.
+2. Go to Google Colab
 
-3. Upload your dataset (dataset-labeled-anon-ip.csv) in the Colab environment.
+3. Click “Upload” and upload the file test.ipynb.
 
-4. Run the notebook cells in order.
+4. Upload your dataset (dataset-labeled-anon-ip.csv) in the Colab environment.
 
-5. 💡 Colab gives you free access to CPUs/GPUs. For faster training, go to
+5. Run the notebook cells in order.
+
+6. 💡 Colab gives you free access to CPUs/GPUs. For faster training, go to
 Runtime → Change runtime type → Hardware accelerator → GPU.
