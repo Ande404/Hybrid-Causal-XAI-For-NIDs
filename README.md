@@ -1,7 +1,7 @@
 
 # NIDS Alert Classification with LSTM + XAI
 
-This project reproduces the approach from [**Kalakoti et al. (2025)**](https://www.scitepress.org/Papers/2025/131807/131807.pdf) for classifying intrusion detection system (IDS) alerts into *important* vs *irrelevant*.  
+This project reproduces the approach from [**Kalakoti et al. (2025)**](https://www.scitepress.org/Papers/2025/131807/131807.pdf) for classifying network intrusion detection system (NIDS) alerts into *important* vs *irrelevant*.  
 It uses a **Long Short-Term Memory (LSTM)** network combined with **explainable AI (XAI)** methods (SHAP, LIME, DeepLIFT and IG) to make the model’s predictions interpretable.
 
 ---
