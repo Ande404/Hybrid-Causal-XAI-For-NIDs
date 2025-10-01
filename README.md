@@ -58,7 +58,7 @@ It uses a **Long Short-Term Memory (LSTM)** network combined with **explainable 
 
 4. Upload your dataset (dataset-labeled-anon-ip.csv) in the Colab environment.
 
-5. Run the notebook cells in order.
+5. Run the notebook.
 
 6. 💡 Colab gives you free access to CPUs/GPUs. For faster training, go to
 Runtime → Change runtime type → Hardware accelerator → GPU.
