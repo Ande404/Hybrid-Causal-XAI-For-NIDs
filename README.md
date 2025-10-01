@@ -58,7 +58,12 @@ It uses a **Long Short-Term Memory (LSTM)** network combined with **explainable 
 
 4. Upload your dataset (dataset-labeled-anon-ip.csv) in the Colab environment.
 
-5. Run the notebook.
+5. Upload the requirements.txt file
 
-6. 💡 Colab gives you free access to CPUs/GPUs. For faster training, go to
-Runtime → Change runtime type → Hardware accelerator → GPU.
+6. Run this command in an empty cell first!
+ ```bash
+  pip install -r requirements.txt
+  ```
+6. Run the notebook
+
+7. If it fails, go to the requirements file and remove all the version numbers, save, and repeat the process from step 5.
