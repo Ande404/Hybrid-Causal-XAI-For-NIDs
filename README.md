@@ -56,7 +56,7 @@ Combines XAI feature importance with causal pathways
 - **Size:** 1,395,324 alerts  
 - **Classes:** Important (1.5%) vs. Irrelevant (98.5%)  
 - **Features:** 47 (network traffic + metadata + similarity scores)  
-- **Link:** GitHub Repository  
+- **Link:** GitHub Repository here [here](https://github.com/ristov/nids-alert-data) 
 
 ---
 
