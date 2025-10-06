@@ -232,9 +232,8 @@ This is a research project for academic purposes. Contributions, suggestions, an
 ---
 
 ## Contact
-Andrew Luwaga,  Brindha Sivakumar, Tasneem Kayed
-luwaga@umich.edu, brindhas@umich.edu, tasneeem@umich.edu,
-College of Engineering and Computer Science
-University of Michigan-Dearborn
+- Andrew Luwaga,  Brindha Sivakumar, Tasneem Kayed
+- luwaga@umich.edu, brindhas@umich.edu, tasneeem@umich.edu
+- College of Engineering and Computer Science, University of Michigan-Dearborn
 
 > Note: This is an ongoing research project. Steps 4 and 5 are in development. Check back for updates.
