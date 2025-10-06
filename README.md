@@ -64,7 +64,7 @@ Combines XAI feature importance with causal pathways
 ### Requirements
 - Python 3.10+  
 - 16GB RAM (minimum)  
-- macOS, Linux, or Windows  
+- macOS, Linux, or Windows or Google CoLab 
 
 ### Setup
 ```bash
