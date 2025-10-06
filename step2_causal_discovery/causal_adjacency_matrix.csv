@@ -1,0 +1,12 @@
+,SignatureMatchesPerDay,Similarity,SCAS,SignatureID,SignatureIDSimilarity,Proto,AlertCount,IntPort,ExtPort,ProtoSimilarity,Label
+SignatureMatchesPerDay,0,0,1,0,1,1,1,0,0,1,1
+Similarity,0,0,0,0,0,0,0,0,0,0,1
+SCAS,0,0,0,0,0,0,0,0,0,0,1
+SignatureID,0,0,0,0,0,1,0,1,1,0,1
+SignatureIDSimilarity,0,0,1,0,0,1,1,1,0,0,1
+Proto,0,0,0,0,0,0,0,0,0,0,1
+AlertCount,0,0,0,0,0,0,0,0,0,0,0
+IntPort,0,0,0,0,0,0,0,0,0,0,1
+ExtPort,0,0,0,0,0,0,0,0,0,0,0
+ProtoSimilarity,0,0,0,0,0,0,0,0,0,0,1
+Label,0,0,0,0,0,0,0,0,0,0,0

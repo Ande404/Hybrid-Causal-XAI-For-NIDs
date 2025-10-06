@@ -1,0 +1,13 @@
+Source,Target
+SignatureMatchesPerDay,SCAS
+SignatureID,IntPort
+SignatureIDSimilarity,SCAS
+SignatureMatchesPerDay,ProtoSimilarity
+SignatureMatchesPerDay,SignatureIDSimilarity
+SignatureID,Proto
+SignatureIDSimilarity,IntPort
+SignatureMatchesPerDay,Proto
+SignatureMatchesPerDay,AlertCount
+SignatureIDSimilarity,Proto
+SignatureID,ExtPort
+SignatureIDSimilarity,AlertCount

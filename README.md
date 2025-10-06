@@ -117,7 +117,7 @@ LTSMModelWithXAI2/
 │   └── xai_comparison_results.csv     
 │
 ├── step2_causal_discovery/
-│   ├── causal_discovery.py            
+│   ├── causal_discovery.ipynb            
 │   ├── causal_graph.gpickle           
 │   ├── causal_discovery_data.csv      
 │   ├── pc_edges.csv                   
@@ -128,10 +128,10 @@ LTSMModelWithXAI2/
 │   └── final_causal_graph.png         
 │
 ├── step4_hybrid_explanations/         
-│   └── hybrid_explainer.py
+│   └── hybrid_explainer.ipynb
 │
 └── step5_evaluation/                  
-    └── user_study.py
+    └── user_study.ipynb
 ```
 
 ---
@@ -157,7 +157,7 @@ python recreate_lstm_xai.py
 ### Step 2: Causal Discovery
 ```bash
 cd step2_causal_discovery
-python causal_discovery.py
+python causal_discovery.ipynb
 ```
 **Outputs:**
 - causal_graph.gpickle  
