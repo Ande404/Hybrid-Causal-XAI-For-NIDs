@@ -70,7 +70,7 @@ Combines XAI feature importance with causal pathways
 ```bash
 # Clone repository
 git clone "https://github.com/Ande404/LTSMModelWithXAI2"
-cd LTSMModelWithXAI2
+cd Hybrid-Causal-XAI-For-NIDs
 
 # Create virtual environment
 python -m venv venv
@@ -105,7 +105,7 @@ joblib>=1.2.0
 
 ## Project Structure
 ```
-LTSMModelWithXAI2/
+Hybrid-Causal-XAI-For-NIDs/
 ├── README.md
 ├── requirements.txt
 ├── dataset-labeled-anon-ip.csv        
