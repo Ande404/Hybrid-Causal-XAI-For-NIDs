@@ -63,7 +63,7 @@ Combines XAI feature importance with causal pathways
 ## Installation
 ### Requirements
 - Python 3.10+  
-- 16GB RAM (minimum)  
+- 12GB RAM (minimum)  
 - macOS, Linux, or Windows or Google CoLab 
 
 ### Setup
@@ -152,7 +152,7 @@ python recreate_lstm_xai.py
 - xai_comparison_results.csv - Evaluation metrics for 4 XAI methods
 - xai_comparison_plots.png - image with XAI methods compared that you will get when you run the model  
 
-**Expected Runtime:** 15–20 minutes on M1 Mac
+**Expected Runtime:** 10 minutes on M1 Mac
 
 ### Step 2: Causal Discovery
 ```bash
@@ -164,7 +164,7 @@ python causal_discovery.ipynb
 - final_causal_graph.png  
 - *_edges.csv  
 
-**Expected Runtime:** 15–30 minutes on M1 Mac
+**Expected Runtime:** 10 minutes on M1 Mac
 
 ---
 
