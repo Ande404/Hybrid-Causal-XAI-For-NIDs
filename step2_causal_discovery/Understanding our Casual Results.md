@@ -6,7 +6,7 @@ Think of our network like a **crime scene investigation**. Traditional AI (your 
 
 ## **📊 Understanding the Results**
 
-![image representing final casual graph](/final_causal_graph.png "final_casual graph")
+![image representing final casual graph](/step2_causal_discovery/causal_graphs_comparison.png "final_casual graph")
 
 ### **Image 1: Final Causal Graph (20 edges)**
 
