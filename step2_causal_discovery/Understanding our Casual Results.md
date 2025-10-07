@@ -6,7 +6,7 @@ Think of our network like a **crime scene investigation**. Traditional AI (your 
 
 ## **📊 Understanding the Results**
 
-![image representing final casual graph](/step2_causal_discovery/causal_graphs_comparison.png "final_casual graph")
+![image representing final casual graph](/step2_causal_discovery/final_causal_graph.png "final_casual graph")
 
 ### **Image 1: Final Causal Graph (20 edges)**
 
@@ -72,7 +72,7 @@ From your graph:
 
 ---
 
-![causual algorithm graph comparison](/causal_graphs_comparison.png "PC vd GES algorithms compared")
+![causual algorithm graph comparison](/step2_causal_discovery/causal_graphs_comparison.png "PC vd GES algorithms compared")
 
 ### **Image 2: PC vs GES Comparison**
 
