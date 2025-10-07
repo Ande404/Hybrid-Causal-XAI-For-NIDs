@@ -71,7 +71,7 @@ Combines XAI feature importance with causal pathways
 ### Setup
 ```bash
 # Clone repository
-git clone "https://github.com/Ande404/LTSMModelWithXAI2"
+git clone "https://github.com/Ande404/Hybrid-Causal-XAI-For-NIDs/"
 cd Hybrid-Causal-XAI-For-NIDs
 
 # Create virtual environment
@@ -210,7 +210,7 @@ If you use this work, please cite:
   title={Hybrid Causal-XAI Framework for Network Intrusion Detection Systems},
   author={Andrew Luwaga,  Brindha Sivakumar, Tasneem Kayed},
   year={2025},
-  howpublished={\url{https://github.com/Ande404/LTSMModelWithXAI2}}
+  howpublished={\url{https://github.com/Ande404/Hybrid-Causal-XAI-For-NIDs/}
 }
 ```
 
