@@ -221,7 +221,7 @@ This is a research project for academic purposes. Contributions, suggestions, an
 ---
 
 ## License
-> Licensed under the Apache License 2.0 — see the [LICENSE](/license) file for details.
+> Licensed under the Apache License 2.0 — see the [LICENSE](/LICENSE) file for details.
 
 ---
 ## References
