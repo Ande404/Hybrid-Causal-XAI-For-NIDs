@@ -10,7 +10,7 @@ Think of our network like a **crime scene investigation**. Traditional AI (your 
 
 ### **Image 1: Final Causal Graph (20 edges)**
 
-This is your **"cause-and-effect map"** of network attacks. Let me decode it:
+This is your **"cause-and-effect map"** of network attacks. Let's decode it:
 
 #### **The Colors Mean:**
 
