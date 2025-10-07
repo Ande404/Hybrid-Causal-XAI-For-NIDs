@@ -23,6 +23,7 @@ Can a hybrid framework that combines causal inference for root cause analysis wi
 
 ## Methodology
 ### Step 1: Baseline NIDS Model
+We adopt a deep learning–based NIDS model architecture similar to the one used by Kalakoti et al. in “Evaluating Explainable AI for Deep Learning-Based NIDS Alert Classification” [1] (Link to paper [here](https://www.scitepress.org/Papers/2025/131807/131807.pdf))
 - **Model:** Long Short-Term Memory (LSTM) network  
 - **Task:** Binary classification (benign vs. malicious traffic)  
 - **Dataset:** TalTech NIDS alerts (1.4M samples, 42 features)  
@@ -223,10 +224,11 @@ This is a research project for academic purposes. Contributions, suggestions, an
 
 
 ---
+## References
+> [1] Kalakoti, R., Vaarandi, R., Bahşi, H., & Nõmm, S. (2025). Evaluating Explainable AI for Deep Learning-Based Network Intrusion Detection System Alert Classification. In Proceedings of the 11th International Conference on Information Systems Security and Privacy. DOI: 10.5220/0013180700003899
 
 ## Acknowledgments
 - TalTech Security Operations Center for providing the dataset  
-- Kalakoti et al. (2025) for baseline methodology  
 - causal-learn, PyTorch, and scikit-learn communities  
 
 ---
