@@ -116,7 +116,9 @@ Hybrid-Causal-XAI-For-NIDs/
 │   ├── recreate_lstm_xai.ipynb        
 │   ├── best_lstm.pt                   
 │   ├── scaler.joblib                  
-│   └── xai_comparison_results.csv     
+│   └── xai_comparison_results.csv  
+│   └── xai_comparison_plots.png 
+│   └── Understanding LTSM and XAI methods.md  
 │
 ├── step2_causal_discovery/
 │   ├── causal_discovery.ipynb            

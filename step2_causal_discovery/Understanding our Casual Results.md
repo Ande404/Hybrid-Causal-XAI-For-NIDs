@@ -228,7 +228,55 @@ From our results:
 
 ---
 
-## **📋 Feature Definitions with Analogies**
+
+### **Understanding Causal Discovery Algorithms**
+
+To build this causal map, the senior researcher hires two specialists—each with a different method for untangling the complex relationships between all the factors (virus, cough, fever, smoking habits, etc.).
+
+### **\#\# PC Algorithm: The Methodical Detective 🕵️‍♀️**
+
+The PC (Peter-Clark) algorithm works like a detective who uses a **process of elimination**.
+
+1. **Start with a Messy Corkboard**: The detective assumes *everything might be connected*. He draws a string between every single factor on his board: Virus ↔ Cough, Cough ↔ Fever, Smoking ↔ Virus, etc. It's a complete web of possibilities.  
+2. **Run Tests to Snip Strings**: The detective then systematically tests each connection to see if it can be ruled out. He asks questions like, "Looking only at patients who have the virus, does having a fever make a cough any more likely?" If the answer is no, he concludes that the fever and cough don't cause each other directly; they are both just symptoms of the virus. **\*snip\*** He cuts the string between fever and cough.  
+3. **Reveal the Causal Map**: After running hundreds of these statistical elimination tests, the only strings left on the board are the ones representing the strongest, most likely direct causal relationships.
+
+---
+### \#\# GES Algorithm: The master sculptor ⚒️ 
+the **GES (Greedy Equivalence Search) algorithm** is like a **master sculptor** creating a statue in two distinct, powerful phases.
+
+
+
+###  The Analogy: The Master Sculptor
+
+The sculptor's goal is to create the perfect statue (the best causal map) from a block of marble. The "quality score" is how lifelike and accurate the final statue is.
+
+### Phase 1: Forward Search (Roughing It Out with Clay)
+
+Instead of making tiny, one-at-a-time changes, the sculptor starts by rapidly adding big chunks of clay to a wireframe. At each step, she considers all possible additions and chooses the **single best chunk** that adds the most form and realism to her statue (i.e., the one that provides the biggest "greedy" improvement to the quality score).
+
+She continues this process, always adding the most impactful piece, until she has a complete but somewhat overly complex rough draft of the statue.
+
+* **In algorithm terms**: This is the "forward phase," where GES greedily **adds edges** (connections) to the causal map, always choosing the single edge that most improves the model's score, until no more additions can improve it.
+
+---
+
+### Phase 2: Backward Search (Refining with a Chisel)
+
+Now, the sculptor puts down the clay and picks up her chisel. Looking at her detailed rough draft, she begins to refine it. She considers all possible pieces she could remove. At each step, she makes the **single best chisel** that removes an unnecessary detail and most improves the statue's lifelike quality.
+
+She continues this "greedy" removal process until any further chiseling would harm the statue.
+
+* **In algorithm terms**: This is the "backward phase," where GES takes the complex map from phase one and greedily **removes edges**, always choosing the single edge whose removal most improves the score.
+
+---
+
+### **\#\# Why This Two-Phase Approach is Better**
+
+By first building up a model and then pruning it down, GES can explore the possible causal structures much more efficiently and is less likely to get stuck on a simple "hill" than the standard Hill Climb algorithm. It has a better chance of finding the true "mountain" (the globally optimal causal map).
+
+---
+## **📋 Dataset Feature Definitions with Analogies**
 
 ### **1\. SignatureMatchesPerDay**
 
