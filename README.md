@@ -133,7 +133,12 @@ Hybrid-Causal-XAI-For-NIDs/
 │   └── Understanding our Casual Results.md            
 │
 ├── step4_hybrid_explanations/         
-│   └── hybrid_explainer.ipynb
+│   └── step4_hybrid_explainer.ipynb
+│   ├── step4_demo_notebook.ipynb   
+│   ├── feature_distributions.png   
+│   └── hybrid_explanation_demo.json 
+│   └── hybrid_explanation_demo.png 
+│   └── README.md
 │
 └── step5_evaluation/                  
     └── user_study.ipynb
@@ -165,9 +170,9 @@ cd step2_causal_discovery
 python causal_discovery.ipynb
 ```
 **Outputs:**
-- causal_graph.gpickle  
-- final_causal_graph.png  
-- *_edges.csv  
+- causal_graph.gpickle - NetworkX graph object (for Step 4)
+- final_causal_graph.png - Visualization for paper
+- *_edges.csv - Edge lists from PC, GES, and consensus
 
 **Expected Runtime:** 10 minutes on M1 Mac
 
@@ -184,18 +189,55 @@ python causal_discovery.ipynb
 
 **Winner:** DeepLIFT outperforms on all metrics.
 
----
+### **Causal Discovery (Step 2\)**
 
-## Limitations
-- Causal sufficiency assumptions may not hold  
-- Dataset imbalance (1.5% important alerts)  
-- Computational cost of causal discovery  
-- Domain-specific generalization  
+* **PC Algorithm**: Discovered 42 directed edges  
+* **GES Algorithm**: Discovered 29 directed edges  
+* **Consensus**: 20 edges agreed by both algorithms  
+* **Root Causes**: Proto, ExtPort (features with no incoming edges)  
+* **Direct Causes of Alerts**: SCAS, SignatureIDSimilarity, Similarity, SignatureMatchesPerDay, IntPort, AlertCount, ProtoSimilarity
+
+**Key Causal Pathways:**
+```bash
+SignatureMatchesPerDay → SignatureIDSimilarity → SCAS → Label  
+Proto → SignatureIDSimilarity → SCAS → Label
+
+IntPort → Label (direct cause)
+```
+
+### **Hybrid Explanations (Step 4\)**
+
+Successfully implemented hybrid explainer combining XAI \+ Causal analysis.
+
+**Example Output:**
+
+* Prediction: Important (95% confidence)  
+* XAI Top Feature: SCAS (importance: 0.42)  
+* Root Cause: SignatureMatchesPerDay (5000/day)  
+* Causal Chain: SignatureMatchesPerDay → SignatureIDSimilarity → SCAS  
+* Recommendation: Block IP, investigate correlated hosts
+
+---
+## **Limitations**
+
+1. **Causal Discovery Assumptions:**  
+   * Assumes causal sufficiency (no hidden confounders)  
+   * Uses observational data (not from controlled experiments)  
+   * Relies on conditional independence tests  
+2. **Dataset Constraints:**  
+   * Single organization (TalTech)  
+   * 60-day collection period  
+   * Imbalanced classes (1.5% important alerts)  
+3. **Computational Requirements:**  
+   * Causal algorithms are computationally expensive (O(n³) for PC)  
+   * XAI methods require model re-evaluation for each sample  
+4. **Generalization:**  
+   * Results specific to Suricata NIDS  
+   * May not transfer to other NIDS platforms or network environments
 
 ---
 
 ## Future Work
-- Complete Step 4: Hybrid explanation generation  
 - Complete Step 5: User study with SOC analysts  
 - Test on more datasets (CIC-IDS2017, NSL-KDD)  
 - Real-time explanation generation  
