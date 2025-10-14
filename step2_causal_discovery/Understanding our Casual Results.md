@@ -31,7 +31,7 @@ An arrow A → B means **"A causes B"** or **"A influences B"**
 
 ---
 
-### **Key Findings from Your Final Graph:**
+### **Key Findings of Our Final Graph:**
 
 #### **1\. Root Causes (Nodes with NO incoming arrows)**
 
