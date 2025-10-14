@@ -1,16 +1,16 @@
-## **🎯 The Big Picture: What Did We Just Do?**
+## ** The Big Picture: What Did We Just Do?**
 
 Think of our network like a **crime scene investigation**. Traditional AI (your LSTM) is like a detective who says *"I'm 95% sure this person is guilty"* but can't explain why. Your causal graph is like **reconstructing the chain of events** that led to the crime.
 
 ---
 
-## **📊 Understanding the Results**
+## ** Understanding the Results**
 
 ![image representing final casual graph](/step2_causal_discovery/final_causal_graph.png "final_casual graph")
 
 ### **Image 1: Final Causal Graph (20 edges)**
 
-This is your **"cause-and-effect map"** of network attacks. Let's decode it:
+This is our **"cause-and-effect map"** of network attacks. Let's decode it:
 
 #### **The Colors Mean:**
 
@@ -112,7 +112,7 @@ This is the **consensus** \- only the relationships BOTH algorithms agreed on.
 
 ---
 
-## **📈 Interpreting Specific Causal Paths**
+## ** Interpreting Specific Causal Paths**
 
  **real examples** from our graph:
 
@@ -160,7 +160,7 @@ IntPort → SignatureIDSimilarity → Label
 
 ---
 
-## **🎤 Key Talking Points**
+## ** Key Talking Points**
 
 ### **Slide 1: The Problem**
 
@@ -187,7 +187,7 @@ IntPort → SignatureIDSimilarity → Label
 
 ---
 
-## **📊 Important metrics**
+## ** Important metrics**
 
 From our results:
 
@@ -199,7 +199,7 @@ From our results:
 
 ---
 
-## **🤔 Answers to Tough Questions**
+## ** Answers to Tough Questions**
 
 **Q: "How do you KNOW these are real causal relationships?"**
 
@@ -211,7 +211,7 @@ From our results:
 
 ---
 
-## **🎯 The "So What?" Moment**
+## ** The "So What?" Moment**
 
 **For SOC Analysts:** Instead of getting 1,000 alerts saying "possible attack", they get:
 
@@ -233,7 +233,7 @@ From our results:
 
 To build this causal map, the senior researcher hires two specialists—each with a different method for untangling the complex relationships between all the factors (virus, cough, fever, smoking habits, etc.).
 
-### **\#\# PC Algorithm: The Methodical Detective 🕵️‍♀️**
+### **\#\# PC Algorithm: The Methodical Detective 🕵**
 
 The PC (Peter-Clark) algorithm works like a detective who uses a **process of elimination**.
 
@@ -464,13 +464,13 @@ Let me give you a **real attack scenario** using all these features:
 * SCAS \= 1 (outlier)  
 *   ↓ (But the VOLUME is unusual \- it's an outlier)  
 *     
-* → RESULT: Important Alert\! 🚨
+* → RESULT: Important Alert\! 
 
 **Translation**: "Multiple coordinated SSH login attempts (high AlertCount) on a critical port (IntPort=22), using identical methods (high ProtoSimilarity and SignatureIDSimilarity), at an unusual scale (SCAS=1 outlier). This is a brute force attack campaign."
 
 ---
 
-## **📊 Quick Reference Table**
+## **Quick Reference Table**
 
 | Feature | Range | Good/Safe | Bad/Suspicious |
 | ----- | ----- | ----- | ----- |
@@ -484,7 +484,7 @@ Let me give you a **real attack scenario** using all these features:
 
 ---
 
-## **🎤 For Your Presentation**
+## ** For Your Presentation**
 
 When explaining these in your presentation, use this simple framework:
 
