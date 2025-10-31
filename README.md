@@ -134,10 +134,10 @@ Hybrid-Causal-XAI-For-NIDs/
 │
 ├── step4_hybrid_explanations/         
 │   └── step4_hybrid_explainer.ipynb
-│   ├── step4_demo_notebook.ipynb   
-│   ├── feature_distributions.png   
+│   ├── step4_demo_notebook.ipynb     
 │   └── hybrid_explanation_demo.json 
-│   └── hybrid_explanation_demo.png 
+│   └── hybrid_explanation_demo.png
+│   └── results_explanation.md  
 │   └── README.md
 │
 └── step5_evaluation/                  
@@ -162,7 +162,7 @@ python recreate_lstm_xai.py
 - xai_comparison_results.csv - Evaluation metrics for 4 XAI methods
 - xai_comparison_plots.png - image with XAI methods compared that you will get when you run the model  
 
-**Expected Runtime:** 10 minutes on M1 Mac
+**Expected Runtime:** 5 minutes on M1 Mac
 
 ### Step 2: Causal Discovery
 ```bash
@@ -174,7 +174,28 @@ python causal_discovery.ipynb
 - final_causal_graph.png - Visualization for paper
 - *_edges.csv - Edge lists from PC, GES, and consensus
 
-**Expected Runtime:** 10 minutes on M1 Mac
+**Expected Runtime:** 5 minutes on M1 Mac
+
+### Step 4: Hybrid Explainer (XAI + Casual)
+
+Run the Hybrid Explainer
+```bash
+ step4_hybrid_explainer.ipynb
+```
+This will:
+
+* Load all required models and data  
+* Generate explanations for sample alerts  
+* Save JSON and PNG visualizations
+
+And Generate
+
+ **Output Files**
+- `hybrid_explanation_fixed_{alert_id}.json` - Structured data for programmatic access
+- `hybrid_explanation_fixed_{alert_id}.png` - Visualization for presentations
+
+
+**Expected Runtime:** < 10s  on M1 Mac
 
 ---
 
@@ -234,6 +255,12 @@ Successfully implemented hybrid explainer combining XAI \+ Causal analysis.
 4. **Generalization:**  
    * Results specific to Suricata NIDS  
    * May not transfer to other NIDS platforms or network environments
+6. **Causal Graph Coverage Gap**
+   * Most XAI-important features aren't in causal graph
+7. **Signature Rule Quality Dependency**
+   * False positives from noisy signatures
+8. **Context Limitation**
+   * Can't distinguish benign repetition from malicious patterns without temporal/user context
 
 ---
 
