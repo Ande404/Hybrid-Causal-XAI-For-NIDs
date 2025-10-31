@@ -1,13 +1,3 @@
-Source,Target
-SignatureMatchesPerDay,SCAS
-SignatureID,IntPort
-SignatureIDSimilarity,SCAS
-SignatureMatchesPerDay,ProtoSimilarity
-SignatureMatchesPerDay,SignatureIDSimilarity
-SignatureID,Proto
-SignatureIDSimilarity,IntPort
-SignatureMatchesPerDay,Proto
-SignatureMatchesPerDay,AlertCount
-SignatureIDSimilarity,Proto
-SignatureID,ExtPort
-SignatureIDSimilarity,AlertCount
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae4a5d60ad9bf14d62987b6d833a48a101f51f82cd2f266e09a54bafbc444ba3
+size 365
