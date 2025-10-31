@@ -1,0 +1,569 @@
+{
+  "alert_id": 1134888,
+  "alert_data": {
+    "SignatureID": 2020899.0,
+    "SignatureMatchesPerDay": 410.872057197296,
+    "AlertCount": 1.0,
+    "Proto": 6.0,
+    "ExtPort": 59948.0,
+    "IntPort": 80.0,
+    "Similarity": 0.672222765347042,
+    "SCAS": 0.0,
+    "AppProtoSimilarity": 0.999999999999994,
+    "DnsRrnameSimilarity": -1.0,
+    "DnsRrtypeSimilarity": -1.0,
+    "EmailFromSimilarity": -1.0,
+    "EmailStatusSimilarity": -1.0,
+    "EmailToSimilarity": -1.0,
+    "ExtIPSimilarity": 0.407040613478972,
+    "ExtPortSimilarity": 1.0,
+    "HttpContentTypeSimilarity": 0.0,
+    "HttpHostnameSimilarity": 1.0,
+    "HttpMethodSimilarity": 0.999999999999994,
+    "HttpProtocolSimilarity": 0.838929481415393,
+    "HttpRequestBodySimilarity": 0.0,
+    "HttpResponseBodySimilarity": 0.0,
+    "HttpStatusSimilarity": 0.0,
+    "HttpUrlSimilarity": 0.999999999999994,
+    "HttpUserAgentSimilarity": 0.838929481415393,
+    "IntIPSimilarity": 1.0,
+    "IntPortSimilarity": 0.998441903895897,
+    "ProtoSimilarity": 0.999999999999994,
+    "SignatureIDSimilarity": 0.999999999999994,
+    "SmtpHeloSimilarity": -1.0,
+    "SmtpMailFromSimilarity": -1.0,
+    "SmtpRcptToSimilarity": -1.0,
+    "SshClientProtoSimilarity": -1.0,
+    "SshClientSoftwareSimilarity": -1.0,
+    "SshServerProtoSimilarity": -1.0,
+    "SshServerSoftwareSimilarity": -1.0,
+    "TlsFingerprintSimilarity": -1.0,
+    "TlsIssuerDnSimilarity": -1.0,
+    "TlsJa3hashSimilarity": -1.0,
+    "TlsSniSimilarity": -1.0,
+    "TlsSubjectSimilarity": -1.0,
+    "TlsVersionSimilarity": -1.0
+  },
+  "xai_analysis": {
+    "prediction": "Important",
+    "confidence": 0.9999994039535522,
+    "pred_class": 1,
+    "top_features": [
+      {
+        "feature": "IntIPSimilarity",
+        "importance": 0.20222051441669464,
+        "value": 1.0,
+        "abs_importance": 0.20222051441669464,
+        "is_missing": false
+      },
+      {
+        "feature": "SignatureIDSimilarity",
+        "importance": -0.10435513406991959,
+        "value": 0.999999999999994,
+        "abs_importance": 0.10435513406991959,
+        "is_missing": false
+      },
+      {
+        "feature": "AppProtoSimilarity",
+        "importance": 0.09800511598587036,
+        "value": 0.999999999999994,
+        "abs_importance": 0.09800511598587036,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpUrlSimilarity",
+        "importance": 0.08305831253528595,
+        "value": 0.999999999999994,
+        "abs_importance": 0.08305831253528595,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpHostnameSimilarity",
+        "importance": 0.07423606514930725,
+        "value": 1.0,
+        "abs_importance": 0.07423606514930725,
+        "is_missing": false
+      }
+    ],
+    "all_features": [
+      {
+        "feature": "TlsSubjectSimilarity",
+        "importance": 1.048228144645691,
+        "value": -1.0,
+        "abs_importance": 1.048228144645691,
+        "is_missing": true
+      },
+      {
+        "feature": "TlsIssuerDnSimilarity",
+        "importance": -0.855208158493042,
+        "value": -1.0,
+        "abs_importance": 0.855208158493042,
+        "is_missing": true
+      },
+      {
+        "feature": "IntIPSimilarity",
+        "importance": 0.20222051441669464,
+        "value": 1.0,
+        "abs_importance": 0.20222051441669464,
+        "is_missing": false
+      },
+      {
+        "feature": "DnsRrtypeSimilarity",
+        "importance": -0.14545415341854095,
+        "value": -1.0,
+        "abs_importance": 0.14545415341854095,
+        "is_missing": true
+      },
+      {
+        "feature": "TlsFingerprintSimilarity",
+        "importance": -0.1407185047864914,
+        "value": -1.0,
+        "abs_importance": 0.1407185047864914,
+        "is_missing": true
+      },
+      {
+        "feature": "DnsRrnameSimilarity",
+        "importance": -0.1349887251853943,
+        "value": -1.0,
+        "abs_importance": 0.1349887251853943,
+        "is_missing": true
+      },
+      {
+        "feature": "SignatureIDSimilarity",
+        "importance": -0.10435513406991959,
+        "value": 0.999999999999994,
+        "abs_importance": 0.10435513406991959,
+        "is_missing": false
+      },
+      {
+        "feature": "AppProtoSimilarity",
+        "importance": 0.09800511598587036,
+        "value": 0.999999999999994,
+        "abs_importance": 0.09800511598587036,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpUrlSimilarity",
+        "importance": 0.08305831253528595,
+        "value": 0.999999999999994,
+        "abs_importance": 0.08305831253528595,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpHostnameSimilarity",
+        "importance": 0.07423606514930725,
+        "value": 1.0,
+        "abs_importance": 0.07423606514930725,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpMethodSimilarity",
+        "importance": 0.06612951308488846,
+        "value": 0.999999999999994,
+        "abs_importance": 0.06612951308488846,
+        "is_missing": false
+      },
+      {
+        "feature": "IntPortSimilarity",
+        "importance": -0.0634620413184166,
+        "value": 0.998441903895897,
+        "abs_importance": 0.0634620413184166,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpProtocolSimilarity",
+        "importance": 0.05856123939156532,
+        "value": 0.838929481415393,
+        "abs_importance": 0.05856123939156532,
+        "is_missing": false
+      },
+      {
+        "feature": "ExtIPSimilarity",
+        "importance": -0.05783645436167717,
+        "value": 0.407040613478972,
+        "abs_importance": 0.05783645436167717,
+        "is_missing": false
+      },
+      {
+        "feature": "TlsJa3hashSimilarity",
+        "importance": 0.052969347685575485,
+        "value": -1.0,
+        "abs_importance": 0.052969347685575485,
+        "is_missing": true
+      },
+      {
+        "feature": "ExtPort",
+        "importance": 0.04000967741012573,
+        "value": 59948.0,
+        "abs_importance": 0.04000967741012573,
+        "is_missing": false
+      },
+      {
+        "feature": "TlsVersionSimilarity",
+        "importance": 0.03642233461141586,
+        "value": -1.0,
+        "abs_importance": 0.03642233461141586,
+        "is_missing": true
+      },
+      {
+        "feature": "Proto",
+        "importance": 0.03558938577771187,
+        "value": 6.0,
+        "abs_importance": 0.03558938577771187,
+        "is_missing": false
+      },
+      {
+        "feature": "SshClientSoftwareSimilarity",
+        "importance": -0.03222149610519409,
+        "value": -1.0,
+        "abs_importance": 0.03222149610519409,
+        "is_missing": true
+      },
+      {
+        "feature": "SmtpRcptToSimilarity",
+        "importance": 0.03025522083044052,
+        "value": -1.0,
+        "abs_importance": 0.03025522083044052,
+        "is_missing": true
+      },
+      {
+        "feature": "EmailStatusSimilarity",
+        "importance": -0.027718614786863327,
+        "value": -1.0,
+        "abs_importance": 0.027718614786863327,
+        "is_missing": true
+      },
+      {
+        "feature": "TlsSniSimilarity",
+        "importance": 0.02713078260421753,
+        "value": -1.0,
+        "abs_importance": 0.02713078260421753,
+        "is_missing": true
+      },
+      {
+        "feature": "ProtoSimilarity",
+        "importance": 0.021427737548947334,
+        "value": 0.999999999999994,
+        "abs_importance": 0.021427737548947334,
+        "is_missing": false
+      },
+      {
+        "feature": "Similarity",
+        "importance": -0.02121743932366371,
+        "value": 0.672222765347042,
+        "abs_importance": 0.02121743932366371,
+        "is_missing": false
+      },
+      {
+        "feature": "SmtpMailFromSimilarity",
+        "importance": -0.018677253276109695,
+        "value": -1.0,
+        "abs_importance": 0.018677253276109695,
+        "is_missing": true
+      },
+      {
+        "feature": "ExtPortSimilarity",
+        "importance": -0.01570962928235531,
+        "value": 1.0,
+        "abs_importance": 0.01570962928235531,
+        "is_missing": false
+      },
+      {
+        "feature": "SshServerSoftwareSimilarity",
+        "importance": 0.012402194552123547,
+        "value": -1.0,
+        "abs_importance": 0.012402194552123547,
+        "is_missing": true
+      },
+      {
+        "feature": "SmtpHeloSimilarity",
+        "importance": -0.011822440661489964,
+        "value": -1.0,
+        "abs_importance": 0.011822440661489964,
+        "is_missing": true
+      },
+      {
+        "feature": "SshClientProtoSimilarity",
+        "importance": -0.010732130147516727,
+        "value": -1.0,
+        "abs_importance": 0.010732130147516727,
+        "is_missing": true
+      },
+      {
+        "feature": "HttpUserAgentSimilarity",
+        "importance": 0.008424267172813416,
+        "value": 0.838929481415393,
+        "abs_importance": 0.008424267172813416,
+        "is_missing": false
+      },
+      {
+        "feature": "EmailFromSimilarity",
+        "importance": 0.008156024850904942,
+        "value": -1.0,
+        "abs_importance": 0.008156024850904942,
+        "is_missing": true
+      },
+      {
+        "feature": "SignatureID",
+        "importance": 0.003947285003960133,
+        "value": 2020899.0,
+        "abs_importance": 0.003947285003960133,
+        "is_missing": false
+      },
+      {
+        "feature": "EmailToSimilarity",
+        "importance": -0.0038056732155382633,
+        "value": -1.0,
+        "abs_importance": 0.0038056732155382633,
+        "is_missing": true
+      },
+      {
+        "feature": "SshServerProtoSimilarity",
+        "importance": 0.001818376244045794,
+        "value": -1.0,
+        "abs_importance": 0.001818376244045794,
+        "is_missing": true
+      },
+      {
+        "feature": "SignatureMatchesPerDay",
+        "importance": 0.00026835783501155674,
+        "value": 410.872057197296,
+        "abs_importance": 0.00026835783501155674,
+        "is_missing": false
+      },
+      {
+        "feature": "IntPort",
+        "importance": 0.00019927775429096073,
+        "value": 80.0,
+        "abs_importance": 0.00019927775429096073,
+        "is_missing": false
+      },
+      {
+        "feature": "AlertCount",
+        "importance": -0.0,
+        "value": 1.0,
+        "abs_importance": 0.0,
+        "is_missing": false
+      },
+      {
+        "feature": "SCAS",
+        "importance": 0.0,
+        "value": 0.0,
+        "abs_importance": 0.0,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpContentTypeSimilarity",
+        "importance": 0.0,
+        "value": 0.0,
+        "abs_importance": 0.0,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpRequestBodySimilarity",
+        "importance": 0.0,
+        "value": 0.0,
+        "abs_importance": 0.0,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpResponseBodySimilarity",
+        "importance": 0.0,
+        "value": 0.0,
+        "abs_importance": 0.0,
+        "is_missing": false
+      },
+      {
+        "feature": "HttpStatusSimilarity",
+        "importance": 0.0,
+        "value": 0.0,
+        "abs_importance": 0.0,
+        "is_missing": false
+      }
+    ],
+    "num_missing_features": 18,
+    "num_present_features": 24
+  },
+  "causal_analysis": [
+    {
+      "target": "IntIPSimilarity",
+      "in_graph": false,
+      "root_causes": [],
+      "causal_paths": [],
+      "direct_causes": [],
+      "reason": "Feature not in SOC analyst-determined causal graph"
+    },
+    {
+      "target": "SignatureIDSimilarity",
+      "in_graph": true,
+      "root_causes": [
+        "SignatureMatchesPerDay"
+      ],
+      "causal_paths": [
+        {
+          "root": "SignatureMatchesPerDay",
+          "path": [
+            "SignatureMatchesPerDay",
+            "SignatureIDSimilarity"
+          ],
+          "path_with_values": [
+            {
+              "feature": "SignatureMatchesPerDay",
+              "value": 410.872057197296
+            },
+            {
+              "feature": "SignatureIDSimilarity",
+              "value": 0.999999999999994
+            }
+          ],
+          "length": 2
+        }
+      ],
+      "direct_causes": [
+        {
+          "feature": "SignatureMatchesPerDay",
+          "value": 410.872057197296
+        }
+      ],
+      "num_paths": 1
+    },
+    {
+      "target": "AppProtoSimilarity",
+      "in_graph": false,
+      "root_causes": [],
+      "causal_paths": [],
+      "direct_causes": [],
+      "reason": "Feature not in SOC analyst-determined causal graph"
+    },
+    {
+      "target": "HttpUrlSimilarity",
+      "in_graph": false,
+      "root_causes": [],
+      "causal_paths": [],
+      "direct_causes": [],
+      "reason": "Feature not in SOC analyst-determined causal graph"
+    },
+    {
+      "target": "HttpHostnameSimilarity",
+      "in_graph": false,
+      "root_causes": [],
+      "causal_paths": [],
+      "direct_causes": [],
+      "reason": "Feature not in SOC analyst-determined causal graph"
+    }
+  ],
+  "label_causal": {
+    "target": "Label",
+    "in_graph": true,
+    "root_causes": [
+      "SignatureID",
+      "SignatureMatchesPerDay",
+      "Similarity"
+    ],
+    "causal_paths": [
+      {
+        "root": "SignatureID",
+        "path": [
+          "SignatureID",
+          "Label"
+        ],
+        "path_with_values": [
+          {
+            "feature": "SignatureID",
+            "value": 2020899.0
+          },
+          {
+            "feature": "Label",
+            "value": "N/A"
+          }
+        ],
+        "length": 2
+      },
+      {
+        "root": "SignatureMatchesPerDay",
+        "path": [
+          "SignatureMatchesPerDay",
+          "Label"
+        ],
+        "path_with_values": [
+          {
+            "feature": "SignatureMatchesPerDay",
+            "value": 410.872057197296
+          },
+          {
+            "feature": "Label",
+            "value": "N/A"
+          }
+        ],
+        "length": 2
+      },
+      {
+        "root": "Similarity",
+        "path": [
+          "Similarity",
+          "Label"
+        ],
+        "path_with_values": [
+          {
+            "feature": "Similarity",
+            "value": 0.672222765347042
+          },
+          {
+            "feature": "Label",
+            "value": "N/A"
+          }
+        ],
+        "length": 2
+      }
+    ],
+    "direct_causes": [
+      {
+        "feature": "SCAS",
+        "value": 0.0
+      },
+      {
+        "feature": "SignatureMatchesPerDay",
+        "value": 410.872057197296
+      },
+      {
+        "feature": "Similarity",
+        "value": 0.672222765347042
+      },
+      {
+        "feature": "Proto",
+        "value": 6.0
+      },
+      {
+        "feature": "SignatureIDSimilarity",
+        "value": 0.999999999999994
+      },
+      {
+        "feature": "ProtoSimilarity",
+        "value": 0.999999999999994
+      },
+      {
+        "feature": "SignatureID",
+        "value": 2020899.0
+      },
+      {
+        "feature": "IntPort",
+        "value": 80.0
+      }
+    ],
+    "num_paths": 3
+  },
+  "recommendations": {
+    "severity": "HIGH",
+    "immediate_actions": [
+      "Review alert details and correlate with other security events in SIEM"
+    ],
+    "investigation_steps": [
+      "Pattern closely matches known attacks (similarity=1.00) - Check threat intelligence for SignatureID=2020899"
+    ],
+    "root_cause_mitigation": [
+      "Root causes of SignatureIDSimilarity: SignatureMatchesPerDay",
+      "Mitigate high signature matches: Review and tune signature rules, implement rate limiting for repeat offenders"
+    ],
+    "severity_reasoning": "High-confidence Important alert (100.0%). Given dataset imbalance (1.5% Important), high confidence indicates strong evidence."
+  }
+}
