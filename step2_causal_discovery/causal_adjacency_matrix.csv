@@ -1,12 +1,3 @@
-,SignatureMatchesPerDay,Similarity,SCAS,SignatureID,SignatureIDSimilarity,Proto,AlertCount,IntPort,ExtPort,ProtoSimilarity,Label
-SignatureMatchesPerDay,0,0,1,0,1,1,1,0,0,1,1
-Similarity,0,0,0,0,0,0,0,0,0,0,1
-SCAS,0,0,0,0,0,0,0,0,0,0,1
-SignatureID,0,0,0,0,0,1,0,1,1,0,1
-SignatureIDSimilarity,0,0,1,0,0,1,1,1,0,0,1
-Proto,0,0,0,0,0,0,0,0,0,0,1
-AlertCount,0,0,0,0,0,0,0,0,0,0,0
-IntPort,0,0,0,0,0,0,0,0,0,0,1
-ExtPort,0,0,0,0,0,0,0,0,0,0,0
-ProtoSimilarity,0,0,0,0,0,0,0,0,0,0,1
-Label,0,0,0,0,0,0,0,0,0,0,0
+version https://git-lfs.github.com/spec/v1
+oid sha256:ffe4ab4086e9e784dd7cba9fbc6b53ded3be28c2d8112e722c61740dd6d88fac
+size 499
