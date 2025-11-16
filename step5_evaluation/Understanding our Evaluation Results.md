@@ -1,4 +1,4 @@
-# Step 5: Hybrid Explainer Evaluation Report (v2 - Corrected)
+# Step 5: Hybrid Explainer Evaluation Report
 
 ## Executive Summary
 
