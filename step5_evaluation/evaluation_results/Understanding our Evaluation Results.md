@@ -1023,7 +1023,3 @@ The system successfully integrates explainable AI with causal inference to impro
 **Key Contribution**: First hybrid framework to combine DeepLIFT XAI, causal discovery, and actionable recommendations for NIDS alert explanation.
 
 ---
-
-**Report Version**: 1.0  
-**Generated**: Automated by Step 5 Evaluation Script  
-**Status**: Ready for thesis integration
