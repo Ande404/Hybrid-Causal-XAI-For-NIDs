@@ -1,0 +1,95 @@
+
+# HYBRID EXPLAINER EVALUATION SUMMARY
+
+## Dataset
+- Total Alerts Analyzed: 5
+- Alert IDs: 549227, 67703, 1086374, 1134888, 706915
+
+## Overall Performance Metrics
+
+### Explanation Quality
+- **Causal Coverage**: 36.00% (avg % of top features with causal paths)
+- **Completeness**: 100.00% (has XAI + Causal + Recommendations)
+- **Complementarity**: 70.10% (XAI and Causal provide different insights)
+- **Actionability**: 100.00% (has specific recommendations)
+
+### Information Density (Higher = More Information)
+- XAI-Only: 0.50
+- Causal-Only: 0.48
+- **Hybrid: 0.78** 
+  → 56.0% more than XAI-Only
+
+### Feature Coverage
+- Average Present Features: 21.8/42 (51.9%)
+- Average Missing Features: 20.2/42 (48.1%)
+
+### Causal Analysis
+- Average Causal Paths per Alert: 1.8
+- Alerts with Causal Paths: 5/5 (100.0%)
+
+### Recommendations
+- Average Recommendations per Alert: 5.8
+- Range: 4-9 recommendations
+
+### Severity Distribution
+- HIGH: 5/5 (100.0%)
+
+## Key Findings
+
+### 1. Hybrid Approach Provides Comprehensive Explanations
+- ✅ All alerts (5/5) have XAI feature importance
+- ✅ 5/5 alerts have causal paths
+- ✅ All alerts (5/5) have actionable recommendations
+- ✅ All alerts (5/5) have severity assessments
+
+### 2. Complementarity Between XAI and Causal
+- Average complementarity: 70.10%
+- This indicates XAI and Causal analysis focus on **different aspects** of the alert
+- XAI: Protocol-specific features (HTTP, TLS)
+- Causal: Root causes (SignatureMatchesPerDay, SignatureID)
+
+### 3. Information Gain Over Baselines
+- Hybrid provides **1.6x** more information than Causal-Only
+
+### 4. Causal Coverage Gap
+- Average causal coverage: 36.00%
+- This reflects the deliberate design choice: only 10 features in causal graph
+- Top XAI features (protocol-specific) often not in causal graph
+
+## Comparison: Hybrid vs XAI-Only vs Causal-Only
+
+| Criterion | XAI-Only | Causal-Only | Hybrid | Winner |
+|-----------|----------|-------------|--------|--------|
+| Feature Importance | ✅ Yes | ❌ No | ✅ Yes | Tie |
+| Causal Paths | ❌ No | ✅ Yes | ✅ Yes | Tie |
+| Root Causes | ❌ No | ✅ Yes | ✅ Yes | Tie |
+| Recommendations | ❌ No | ❌ No | ✅ Yes | **Hybrid** |
+| Severity Assessment | ❌ No | ❌ No | ✅ Yes | **Hybrid** |
+| Information Density | 0.50 | 0.48 | 0.78 | **Hybrid** |
+| Actionability | Low | Medium | High | **Hybrid** |
+
+## Strengths
+
+1. **Comprehensive Coverage**: Combines "what" (XAI) with "why" (Causal)
+2. **Actionable Guidance**: Specific recommendations for each alert
+3. **Severity Context**: Accounts for dataset imbalance (1.5% vs 98.5%)
+4. **Missing Value Handling**: Filters protocol-specific features appropriately
+5. **Root Cause Tracing**: Identifies SignatureMatchesPerDay, SignatureID as root causes
+
+## Limitations
+
+1. **Causal Coverage Gap**: Only 36.0% of top XAI features have causal paths
+2. **Graph Size Constraint**: 10-feature causal graph vs 42-feature XAI space
+3. **Protocol-Specific Features**: HTTP, TLS features not in causal graph by design
+4. **Limited Diversity**: All alerts predicted as Important (model bias toward minority class)
+
+## Recommendations for Future Work
+
+1. **Expand Causal Graph**: Include protocol-specific features in causal discovery
+2. **Temporal Context**: Add time-based features to distinguish benign patterns
+3. **User Validation**: Conduct SOC analyst study to validate explanation quality
+4. **Adaptive Recommendations**: Context-aware recommendations based on alert history
+
+---
+**Evaluation Date**: 2025-11-16 12:55:13
+**Total Runtime**: Step 5 Evaluation Complete
