@@ -110,14 +110,14 @@ joblib>=1.2.0
 Hybrid-Causal-XAI-For-NIDs/
 ├── README.md
 ├── requirements.txt
-├── dataset-labeled-anon-ip.csv        
+├── dataset-labeled-anon-ip.csv //this is not included in repo      
 │
 ├── step1_lstm_xai/
 │   ├── recreate_lstm_xai.ipynb        
 │   ├── best_lstm.pt                   
 │   ├── scaler.joblib                  
-│   └── xai_comparison_results.csv  
-│   └── xai_comparison_plots.png 
+│   ├── xai_comparison_results.csv  
+│   ├── xai_comparison_plots.png 
 │   └── Understanding LTSM and XAI methods.md  
 │
 ├── step2_causal_discovery/
@@ -129,19 +129,28 @@ Hybrid-Causal-XAI-For-NIDs/
 │   ├── final_causal_edges.csv         
 │   ├── causal_adjacency_matrix.csv    
 │   ├── causal_graphs_comparison.png   
-│   └── final_causal_graph.png 
+│   ├── final_causal_graph.png 
 │   └── Understanding our Casual Results.md            
 │
 ├── step4_hybrid_explanations/         
-│   └── step4_hybrid_explainer.ipynb
+│   ├── step4_hybrid_explainer.ipynb
 │   ├── step4_demo_notebook.ipynb     
-│   └── hybrid_explanation_demo.json 
-│   └── hybrid_explanation_demo.png
-│   └── results_explanation.md  
+│   ├── hybrid_explanation_demo.json 
+│   ├──  hybrid_explanation_demo.png
+│   ├── results_explanation.md  
 │   └── README.md
 │
 └── step5_evaluation/                  
-    └── user_study.ipynb
+    ├── step5_evaluation.ipynb
+    ├── Understanding our Evaluation Results.md
+    ├── README.md
+    └── evaulation_results/
+        ├── evaluation_metrics_visualization.png
+        ├── evaluation_metrics.csv
+        ├── EVALUATION_SUMMARY.txt
+        ├── method_comparison_heatmap.png
+        ├── method_comparison_table.csv
+        └── per_alert_analysis.png
 ```
 
 ---
@@ -197,6 +206,55 @@ And Generate
 
 **Expected Runtime:** < 10s  on M1 Mac
 
+### Step 5: Hybrid Explainer Evaluation
+
+#### Install the Prerequisite dependencies
+```bash
+# Install dependencies (if not already installed)
+pip install pandas numpy matplotlib seaborn
+```
+
+Ensure you have completed Steps 1-4: and make sure your step 4 folder ( ```step4_hybrid_explanations```) has these files:
+
+ - `hybrid_explanation_fixed_549227.json`
+ - `hybrid_explanation_fixed_67703.json`
+ - `hybrid_explanation_fixed_1086374.json`
+ - `hybrid_explanation_fixed_1134888.json`
+ - `hybrid_explanation_fixed_706915.json`
+
+#### Run Evaluation
+```bash
+step5_evaluation.ipynb
+```
+
+#### View Results
+```bash
+# Check the evaluation_results/ directory
+ls evaluation_results/
+
+# Open visualizations
+open evaluation_results/evaluation_metrics_visualization.png
+open evaluation_results/per_alert_analysis.png
+open evaluation_results/method_comparison_heatmap.png
+
+```
+
+**Expected Runtime:** < 10s  on M1 Mac
+
+#### Output Files
+
+**Quantitative Data (CSV)**
+- `evaluation_metrics.csv` - Per-alert metrics
+- `method_comparison_table.csv` - XAI vs Causal vs Hybrid
+
+**Visualizations (PNG)**
+- `evaluation_metrics_visualization.png` 
+- `per_alert_analysis.png` - Detailed breakdown
+- `method_comparison_heatmap.png` - 3-way comparison
+
+**Summary Report (TXT)**
+- `EVALUATION_SUMMARY.txt` - Comprehensive analysis
+
 ---
 
 ## Key Results
@@ -238,6 +296,24 @@ Successfully implemented hybrid explainer combining XAI \+ Causal analysis.
 * Causal Chain: SignatureMatchesPerDay → SignatureIDSimilarity → SCAS  
 * Recommendation: Block IP, investigate correlated hosts
 
+### **Hybrid Explainer Evaluation (Step 5\)**
+
+Successfully perfomed a quantitative evaluation of the Hybrid Causal-XAI Framework for Network Intrusion Detection Systems (NIDS)
+
+**Expected Results:**
+
+* Causal Coverage: ~36% (2 out of 5 top features have causal paths)
+* Completeness: 100% (all alerts have XAI + Causal + Recommendations)  
+* Complementarity: ~70% (XAI and Causal focus on different features) 
+* Causal Chain: SignatureMatchesPerDay → SignatureIDSimilarity → SCAS  
+* Information Density (Hybrid): ~1.25 (2.0× more than XAI-only)
+
+**What to Look For**
+
+1. Bar charts showing Hybrid outperforms baselines
+2. Heatmap showing Hybrid has highest information density
+3. Per-alert breakdown showing variation across alerts 
+
 ---
 ## **Limitations**
 
@@ -264,8 +340,7 @@ Successfully implemented hybrid explainer combining XAI \+ Causal analysis.
 
 ---
 
-## Future Work
-- Complete Step 5: User study with SOC analysts  
+## Future Work  
 - Test on more datasets (CIC-IDS2017, NSL-KDD)  
 - Real-time explanation generation  
 - Develop SOC dashboard  
@@ -310,5 +385,3 @@ This is a research project for academic purposes. Contributions, suggestions, an
 - Andrew Luwaga,  Brindha Sivakumar, Tasneem Kayed
 - luwaga@umich.edu, brindhas@umich.edu, tasneeem@umich.edu
 - College of Engineering and Computer Science, University of Michigan-Dearborn
-
-> Note: This is an ongoing research project. Steps 4 and 5 are in development. Check back for updates.
