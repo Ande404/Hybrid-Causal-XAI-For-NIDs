@@ -133,8 +133,7 @@ Hybrid-Causal-XAI-For-NIDs/
 │   └── Understanding our Casual Results.md            
 │
 ├── step4_hybrid_explanations/         
-│   ├── step4_hybrid_explainer.ipynb
-│   ├── step4_demo_notebook.ipynb     
+│   ├── step4_hybrid_explainer.ipynb 
 │   ├── hybrid_explanation_demo.json 
 │   ├──  hybrid_explanation_demo.png
 │   ├── results_explanation.md  
