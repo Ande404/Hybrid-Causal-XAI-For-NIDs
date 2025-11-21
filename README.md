@@ -1,3 +1,4 @@
+![Causal+XAI Hybrid Framework](Causal-XAI-logo.png)
 
 # Hybrid Causal-XAI Framework for Network Intrusion Detection Systems
 
