@@ -114,7 +114,8 @@ joblib>=1.2.0
 Hybrid-Causal-XAI-For-NIDs/
 ├── README.md
 ├── requirements.txt
-├── dataset-labeled-anon-ip.csv //this is not included in repo      
+├── dataset-labeled-anon-ip.csv //this is not included in repo
+├── Hybrid_Causal-XAI_Framework_for_Network_Intrusion_Detection_Systems_Research-Paper.pdf      
 │
 ├── step1_lstm_xai/
 │   ├── recreate_lstm_xai.ipynb        
