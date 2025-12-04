@@ -2,6 +2,8 @@
 
 # Hybrid Causal-XAI Framework for Network Intrusion Detection Systems
 
+**Research Paper:** [Read the Full Paper Here](Hybrid_Causal-XAI_Framework_for_Network_Intrusion_Detection_Systems_Research-Paper.pdf)
+
 A novel framework combining causal inference with explainable AI to improve the actionability, trustworthiness, and diagnostic utility of deep learning-based Network Intrusion Detection Systems (NIDS).
 
 ## Project Overview
